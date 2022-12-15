@@ -6,7 +6,9 @@ import { OrderContext } from "./context/orders/orderContext";
 import { useProductsContext } from "./context/products/useProductsContext";
 import { useOrdersContext } from "./context/orders/useOrdersContext";
 import { OrderBookingCalendar } from "./components/Order/OrderBookingCalendar/OrderBookingCalendar";
-import {Header} from "./components/Header/Header";
+import { Header } from "./components/Header/Header"
+import {Footer} from "./components/Footer/Footer";
+
 
 function App() {
     const initialProductsState = useProductsContext();
@@ -15,10 +17,11 @@ function App() {
   return (
       <OrderContext.Provider value={initialOrdersState}>
          <ProductsContext.Provider value={initialProductsState}>
-             <Header />
+            <Header/>
             <OrderBookingCalendar />
             <Products />
             <OrderForm />
+             <Footer/>
         </ProductsContext.Provider>
       </OrderContext.Provider>
   );

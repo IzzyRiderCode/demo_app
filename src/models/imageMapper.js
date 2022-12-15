@@ -12,6 +12,7 @@ const images = {
     SMR_BANNER: '/images/rollup_smr.png',
     REJOIN_BANNER: '/images/rejoin_sign.png',
     REJOIN_SMALL_BANNER: '/images/rejoin_sign.png',
+    HEADER_BACKGROUND: '/images/tlo_header.png'
 }
 
 export const getImage = (imageType) => {

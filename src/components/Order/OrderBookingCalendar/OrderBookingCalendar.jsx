@@ -30,7 +30,7 @@ export const OrderBookingCalendar = () => {
             events={events}
             startAccessor="start"
             endAccessor="end"
-            style={{ height: 500 }}
+            style={{ height: 300 }}
             onSelectEvent={handleSelectEvent}
         />
         {selectedOrder && <OrderModal order={selectedOrder} isOpen={orderDetailsModalOpen} onRequestClose={closeModal} />}

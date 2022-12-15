@@ -1,3 +1,10 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
 .avatar {
     border-radius: 50%;
     width: 90px;
@@ -53,3 +60,4 @@
     z-index: 99;
     background: black;
 }
+
