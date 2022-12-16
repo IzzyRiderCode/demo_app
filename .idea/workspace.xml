@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a874645-0cd8-421a-b1fe-495157f8e1ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/helpers/getAvailableProducts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
@@ -17,6 +16,7 @@
       <change beforePath="$PROJECT_DIR$/src/components/Product/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Products.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/orders/orderContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/orders/orderContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/orders/useOrdersContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/orders/useOrdersContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/getAvailableProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/getAvailableProducts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671135859108</updated>
       <workItem from="1671135860706" duration="9811000" />
-      <workItem from="1671208568767" duration="8097000" />
+      <workItem from="1671208568767" duration="10588000" />
     </task>
     <servers />
   </component>

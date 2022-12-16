@@ -1,20 +1,17 @@
-import { availableProducts } from "../../models/data";
 import { Product } from "./Product";
 import { getProduct } from "../../models/product";
-import {useCallback, useContext, useMemo} from "react";
+import { useContext, useMemo, } from "react";
 import {OrderContext} from "../../context/orders/orderContext";
-import {useOrderForm} from "../Order/OrderForm/useOrderForm";
 import {getAvailableProducts} from "../../helpers/getAvailableProducts";
 
 export const Products = () => {
-    const {isCandidateSet, orders} = useContext(OrderContext)
-    const {dateFrom, } = useOrderForm()
-    const products = useMemo(()=> {
-        return getAvailableProducts({orders, dateFrom})
-    },[dateFrom, orders])
+    const {isCandidateSet, orders, orderCandidateDates: { from: dateFrom, to: dateTo }} = useContext(OrderContext)
+    const products = useMemo(() => {
+        return getAvailableProducts({orders, dateFrom, dateTo });
+    }, [dateFrom, orders]);
 
-    return     <>
 
+    return <>
         {isCandidateSet && <ul>
             {products.map((currentProduct, index) => {
                 const product = getProduct(currentProduct);
@@ -23,7 +20,7 @@ export const Products = () => {
                     <Product {...product} />
                 </li>
             })
-        }
-    </ul> }
+            }
+        </ul> }
     </>
 }

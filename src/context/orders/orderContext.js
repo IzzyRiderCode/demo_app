@@ -6,6 +6,12 @@ const initialOrders = {
     removeOrder: () => {},
     isCandidateSet: false,
     setIsCandidateSet: () => {},
+    orderCandidateDates: {
+        from: '',
+        setFrom: () => {},
+        to: '',
+        setTo: () => {},
+    }
 };
 
 export const OrderContext = createContext(initialOrders);

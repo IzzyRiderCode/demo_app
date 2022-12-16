@@ -17,11 +17,11 @@ export const FormInputs = {
 
 export const useOrderForm = () => {
     const [formValues, setFormValues] = useState(initialOrderFormValues);
-    const {setIsCandidateSet} = useContext(OrderContext)
+    const { setIsCandidateSet, orderCandidateDates } = useContext(OrderContext)
 
-    useEffect(()=> {
+    useEffect(() => {
         if (formValues.dateFrom && formValues.dateTo ) {
-            setIsCandidateSet(true)
+            setIsCandidateSet(true);
         }
         else {
             setIsCandidateSet(false)
@@ -40,6 +40,13 @@ export const useOrderForm = () => {
             [name]: value,
         })
 
+        if (name === FormInputs.dateFrom) {
+            orderCandidateDates.setFrom(value);
+        }
+
+        if (name === FormInputs.dateTo) {
+            orderCandidateDates.setTo(value);
+        }
     }
 
     return { ...formValues, resetForm, updateForm };
