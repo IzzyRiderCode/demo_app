@@ -4,6 +4,7 @@
     <list default="true" id="7a874645-0cd8-421a-b1fe-495157f8e1ee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/image/tlo_footer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/footerimg/tlo_footer.jpg" afterDir="false" />
@@ -13,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/src/components/Order/OrderForm/OrderForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/OrderForm/OrderForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Order/OrderForm/useOrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/OrderForm/useOrderForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Products.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/orders/orderContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/orders/orderContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/orders/useOrdersContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/orders/useOrdersContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/getAvailableProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/getAvailableProducts.js" afterDir="false" />
@@ -47,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/48660/Desktop/IzzyCode/orto",
+    "last_opened_file_path": "C:/Users/48660/Desktop/IzzyCode/ortocare",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
@@ -95,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671135859108</updated>
       <workItem from="1671135860706" duration="9811000" />
-      <workItem from="1671208568767" duration="10588000" />
+      <workItem from="1671208568767" duration="15739000" />
     </task>
     <servers />
   </component>

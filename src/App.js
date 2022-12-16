@@ -17,16 +17,13 @@ function App() {
   return (
       <>
           <Header/>
-      <OrderContext.Provider value={initialOrdersState}>
-         <ProductsContext.Provider value={initialProductsState}>
-
-            <OrderBookingCalendar />
-             <OrderForm />
-            <Products />
-
-
-        </ProductsContext.Provider>
-      </OrderContext.Provider>
+            <OrderContext.Provider value={initialOrdersState}>
+                <ProductsContext.Provider value={initialProductsState}>
+                    <OrderBookingCalendar />
+                    <OrderForm />
+                    <Products />
+                </ProductsContext.Provider>
+            </OrderContext.Provider>
           <Footer/>
       </>
   );

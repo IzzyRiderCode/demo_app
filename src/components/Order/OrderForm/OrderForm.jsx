@@ -27,13 +27,15 @@ export const OrderForm = () => {
     }
 
     return <>
-        <div> <span> Select Order Dates</span></div>
-        <input value={clientName} onChange={({ target: { value } }) => updateForm(FormInputs.clientName, value)} type="text"/>
-        <input value={clientAddress} onChange={({ target: { value } }) => updateForm(FormInputs.clientAddress, value)} type="text"/>
-        <input value={dateFrom} onChange={({ target: { value } }) => updateForm(FormInputs.dateFrom, value)} type="date"/>
-        <input value={dateTo} onChange={({ target: { value } }) => updateForm(FormInputs.dateTo, value)} type="date"/>
-        <button onClick={handleAddOrder}>
-            Add order
+        <div> <span className={'selectOrder'} > Select Order Dates</span></div>
+        <div className={'forms'}>
+        <div> Imię  <input className={'form'} value={clientName} onChange={({ target: { value } }) => updateForm(FormInputs.clientName, value)} type="text"/> </div>
+        <div> Adres wysyłki <input className={'form'} value={clientAddress} onChange={({ target: { value } }) => updateForm(FormInputs.clientAddress, value)} type="text"/> </div>
+        <div> Od:<input className={'form'} value={dateFrom} onChange={({ target: { value } }) => updateForm(FormInputs.dateFrom, value)} type="date"/> </div>
+        <div> Do: <input className={'form'} value={dateTo} onChange={({ target: { value } }) => updateForm(FormInputs.dateTo, value)} type="date"/> </div>
+        <button className={'button'} onClick={handleAddOrder}>
+            ZAMÓW
         </button>
+       </div>
     </>
 }

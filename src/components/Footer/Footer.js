@@ -14,7 +14,6 @@ export const Footer = () => {
                 justifyContent: "flex-end",
                 alignItems: "center"
             }}>
-
                 <img style={{
                     marginTop: 25,
                     marginLeft: 15,
@@ -23,12 +22,11 @@ export const Footer = () => {
                     marginTop: 10,
                     marginRight: 50,
                     display: "flex",
-                    justifyContent: "flex-end",
-                    gap: 80,
+                    justifyContent: "space-between",
+
                 }}>
                 <address style={{
                     color: "purple",
-
                 }}>
                     OrtoCare Sp. z o.o.
                     ul. Łopuszańska 95,
