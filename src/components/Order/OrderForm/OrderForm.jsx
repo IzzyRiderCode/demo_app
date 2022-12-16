@@ -27,6 +27,7 @@ export const OrderForm = () => {
     }
 
     return <>
+        <div> <span> Select Order Dates</span></div>
         <input value={clientName} onChange={({ target: { value } }) => updateForm(FormInputs.clientName, value)} type="text"/>
         <input value={clientAddress} onChange={({ target: { value } }) => updateForm(FormInputs.clientAddress, value)} type="text"/>
         <input value={dateFrom} onChange={({ target: { value } }) => updateForm(FormInputs.dateFrom, value)} type="date"/>

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import {useState, useContext, useEffect} from "react";
+import {OrderContext} from "../../../context/orders/orderContext";
 
 const initialOrderFormValues = {
     clientName: '',
@@ -16,9 +17,21 @@ export const FormInputs = {
 
 export const useOrderForm = () => {
     const [formValues, setFormValues] = useState(initialOrderFormValues);
+    const {setIsCandidateSet} = useContext(OrderContext)
+
+    useEffect(()=> {
+        if (formValues.dateFrom && formValues.dateTo ) {
+            setIsCandidateSet(true)
+        }
+        else {
+            setIsCandidateSet(false)
+        }
+
+    }, [formValues, setIsCandidateSet])
 
     const resetForm = () => {
         setFormValues(initialOrderFormValues);
+        setIsCandidateSet(false);
     }
 
     const updateForm = (name, value) => {
@@ -26,6 +39,7 @@ export const useOrderForm = () => {
             ...formValues,
             [name]: value,
         })
+
     }
 
     return { ...formValues, resetForm, updateForm };

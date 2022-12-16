@@ -1,16 +1,14 @@
 import React from "react";
-import background from "./images/tlo_header.png"
 
 
 
 export const Header= () => {
     return (
-        <>
             <div style={{
                 height: 200,
                 marginBottom: 20,
                 borderRadius: 10,
-                backgroundImage: `url(${background})`,
+                backgroundImage: `url("./images/headerimg/tlo_header.png")`,
                 backgroundSize: "cover",
                 display: "flex",
             }}>
@@ -23,15 +21,15 @@ export const Header= () => {
                     display: "flex",
                     justifyContent: "flex-start"
 
-                }} src="./images/logo_ortocare_stopka.png" alt="header_logo"/>
+                }} src="./images/headerimg/logo_ortocare_stopka.png" alt="header_logo"/>
                 <h1 style={{
                     color: "purple",
                     fontFamily: "Open Sans",
-                    marginTop: 140,
-                    marginLeft: 440,
+                    flexGrow: 1,
+                    textAlign: "center",
+                    alignSelf: "center"
                 }}>Demo App</h1>
             </div>
-        </>
     )
 }
 

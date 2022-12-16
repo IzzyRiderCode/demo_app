@@ -1,6 +1,4 @@
 import React from "react";
-import backgroundFooter from "./image/tlo_footer.jpg"
-
 
 export const Footer = () => {
     return (
@@ -10,7 +8,7 @@ export const Footer = () => {
                 marginTop: 20,
                 marginBottom: 20,
                 borderRadius: 10,
-                backgroundImage: `url(${backgroundFooter})`,
+                backgroundImage: `url("./images/footerimg/tlo_footer.jpg")`,
                 backgroundSize: "cover",
                 display: "block",
                 justifyContent: "flex-end",

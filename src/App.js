@@ -15,15 +15,20 @@ function App() {
     const initialOrdersState = useOrdersContext();
 
   return (
+      <>
+          <Header/>
       <OrderContext.Provider value={initialOrdersState}>
          <ProductsContext.Provider value={initialProductsState}>
-            <Header/>
+
             <OrderBookingCalendar />
+             <OrderForm />
             <Products />
-            <OrderForm />
-             <Footer/>
+
+
         </ProductsContext.Provider>
       </OrderContext.Provider>
+          <Footer/>
+      </>
   );
 }
 
